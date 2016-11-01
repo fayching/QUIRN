@@ -64,7 +64,7 @@ export default class GridCell extends React.Component{
         imgHeight = width * ratio;
         return (
             <TouchableHighlight underlayColor={'#e5e6e7'} onPress={this._onPress}>
-                <View style={{marginRight: spacing}}>
+                <View style={[{marginRight: spacing},style]} >
                     {imgUri && <Image style={[styles.img,{width: width}, {height: imgHeight}, elementStyles && elementStyles.img]} source = {{uri: imgUri}}/>}
                     {primaryText && <Text style={[styles.primaryText,elementStyles && elementStyles.primaryText]} numberOfLines={primaryTextLines}>{primaryText}</Text> }
                     {subText &&  <Text style={[styles.subText, elementStyles && elementStyles.subText]} numberOfLines={subTextLines}>{subText}</Text> }

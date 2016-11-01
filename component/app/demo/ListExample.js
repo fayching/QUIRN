@@ -53,8 +53,9 @@ export default class ListExample extends Component {
                 subText={rowData.subText}
                 subTextLines={rowData.subTextLines}
                 rowID={rowID}
+                subTextMore = {<Text>{rowData.action}</Text>}
                 total={this.state.dataSource._cachedRowCount}
-                isListBorder={true}
+                isCellBorder={true}
                 rightIcon={
                    rowData.badge && (<View style={styles.badge}><Text style={styles.badgeText}>{rowData.badge}</Text></View>) ||
 

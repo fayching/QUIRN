@@ -8,7 +8,7 @@ import {
     PixelRatio
 } from 'react-native';
 
-module.exports = require('react-native').StyleSheet.create({
+module.exports =  StyleSheet.create({
     default: {
         height: 30,
         flexDirection:'row',

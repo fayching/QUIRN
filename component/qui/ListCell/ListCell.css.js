@@ -1,32 +1,29 @@
+
 import React, {
     Component,
     PropTypes
 } from 'react';
 
 import {
-    StyleSheet
+    StyleSheet,
 } from 'react-native';
-
-import Platform from 'Platform';
-import Dimensions from 'Dimensions';
-
-
-const deviceSize = Dimensions.get('window');
-const distance = deviceSize.width <= 320 ? 10 : 15;
 
 module.exports = require('react-native').StyleSheet.create({
     listContainer: {
         flexDirection: 'row',
-        alignItems: 'center',
-        paddingLeft: distance
+        paddingLeft: 0
     },
 
     leftIcon: {
-        marginTop: 10,
-        marginRight: 10,
-        marginBottom: 10
+        marginTop: 12,
+        marginRight: 12,
+        marginBottom: 12
     },
-
+    noSpace: {
+        marginTop: 0,
+        marginRight: 12,
+        marginBottom: 1
+    },
     rightContainer: {
         flex: 1,
         flexDirection: 'row'
@@ -35,16 +32,16 @@ module.exports = require('react-native').StyleSheet.create({
     mainContainer: {
         flex: 1,
         justifyContent: 'center',
-        marginRight: distance,
-        paddingTop: 10,
-        paddingBottom: 10
+        marginRight: 12,
+        paddingTop: 12,
+        paddingBottom: 12,
     },
 
     rightIcon: {
         flexDirection: 'row',
         alignSelf: 'center',
         justifyContent: 'flex-end',
-        marginRight: distance
+        marginRight: 0
     },
     primaryTextContainer: {
         justifyContent: 'center',
@@ -55,7 +52,7 @@ module.exports = require('react-native').StyleSheet.create({
 
     subText: {
         fontSize: 14,
-        lineHeight: 21
+        lineHeight: 18
     },
 
     subTextMore: {
